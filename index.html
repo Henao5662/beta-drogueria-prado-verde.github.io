@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Droguerías Prado Verde</title>
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="Imagenes/logo.png">
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+  <img src="Imagenes/logo.png" class="logo">
+  <h1>Droguerías Prado Verde</h1>
+  <p class="subtitulo">Seguridad y bienestar a su servicio 💊</p>
+</header>
+
+<!-- MENÚ HAMBURGUESA -->
+<div class="hamburger" onclick="toggleMenu()">
+  ☰
+</div>
+
+<!-- NAV -->
+<nav id="menu">
+  <a href="#inicio">Inicio</a>
+  <a href="#nosotros">Sobre Nosotros</a>
+  <a href="#galeria">Galería</a>
+  <a href="#contacto">Contactos</a>
+</nav>
+
+<!-- INICIO -->
+<section id="inicio" class="seccion">
+  <h2>Bienvenidos</h2>
+  <p>Medicamentos confiables y domicilios rápidos.</p>
+</section>
+
+<!-- SOBRE NOSOTROS -->
+<section id="nosotros" class="seccion">
+  <h2>Sobre Nosotros</h2>
+  <p>Comprometidos con la salud de nuestra comunidad.</p>
+</section>
+
+<!-- GALERÍA -->
+<section id="galeria" class="seccion">
+  <h2>Galería</h2>
+
+  <div class="fotos">
+    <img src="img1.jpg">
+    <img src="img2.jpg">
+    <img src="img3.jpg">
+    <img src="img4.jpg">
+  </div>
+</section>
+
+<!-- CONTACTOS -->
+<section id="contacto" class="seccion">
+
+  <h2>Contactos y Direcciones</h2>
+
+  <div class="contacto-grid">
+
+    <div class="contact-card">
+      <h3>📍 Prado</h3>
+      <p>📞 Droguería prado verde: 3183059434</p>
+      <p>🏪 Prado Centro</p>
+    </div>
+
+    <div class="contact-card">
+      <h3>📍 Fátima</h3>
+      <p>📞 Droguería prado verde Fátima: 3052875888</p>
+      <p>🏪 Barrio Fátima</p>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- MAPAS -->
+<section class="seccion">
+
+  <h2>Ubicación de Nuestras Sedes</h2>
+
+  <div class="maps-grid">
+
+    <!-- PRADO -->
+    <div class="map-card">
+
+      <h3>📍 Prado</h3>
+
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31732.438226112088!2d-75.62948728916017!3d6.190279200000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e46826bcad8948d%3A0xd838a3f101946adc!2sDroguer%C3%ADa%20Prado%20Verde!5e0!3m2!1ses-419!2sco!4v1770772973196!5m2!1ses-419!2sco">
+      </iframe>
+
+      <a href="https://maps.app.goo.gl/Pa3eea5WeXVedAmF9"
+         target="_blank"
+         class="btn-mapa">
+         Cómo llegar
+      </a>
+
+    </div>
+
+    <!-- FÁTIMA -->
+    <div class="map-card">
+
+      <h3>📍 Fátima</h3>
+
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31733.549042195664!2d-75.65321148916017!3d6.171759800000015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4683045af7930b%3A0xf33123411becfdf7!2sDroguer%C3%ADa%20Prado%20Verde%20Fatima!5e0!3m2!1ses-419!2sco!4v1770773214380!5m2!1ses-419!2sco">
+      </iframe>
+
+      <a href="https://maps.app.goo.gl/fR5QCUUdFnVQUuYm7"
+         target="_blank"
+         class="btn-mapa">
+         Cómo llegar
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+  © 2026 Droguerías Prado Verde
+</footer>
+
+<!-- WHATSAPP -->
+<div class="whatsapp-container">
+
+  <div class="whatsapp-options" id="waOptions">
+
+    <a href="https://wa.me/573183059434" target="_blank">
+      Droguería Prado verde
+    </a>
+
+    <a href="https://wa.me/573052875888" target="_blank">
+      Droguería Prado verde Fátima
+    </a>
+
+  </div>
+
+  <button class="whatsapp-btn" onclick="toggleWA()">
+    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png">
+  </button>
+
+</div>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
