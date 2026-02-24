@@ -16,7 +16,7 @@ header{
 }
 
 .logo{
-  width:190px;
+  width:120px;
 }
 
 .subtitulo{
@@ -57,7 +57,6 @@ nav a{
   text-align:center;
 }
 
-/* GALERÍA */
 .fotos{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(140px,1fr));
@@ -71,18 +70,11 @@ nav a{
   border-radius:12px;
 }
 
-/* CONTACTO */
-.contacto-grid{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:15px;
-}
-
-/* MAPAS LADO A LADO */
-.maps-grid{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:20px;
+/* CONTACT CARD */
+.contact-card{
+  background:#f9fbff;
+  padding:20px;
+  border-radius:15px;
 }
 
 .map-card iframe{
@@ -92,7 +84,7 @@ nav a{
   border-radius:12px;
 }
 
-/* BOTÓN LLEGAR */
+/* BOTÓN */
 .btn-mapa{
   display:inline-block;
   margin-top:10px;
@@ -123,37 +115,22 @@ footer{
   width:48px;
   height:48px;
   border-radius:50%;
-  border:none;
+  display:flex;
+  align-items:center;
+  justify-content:center;
 }
 
 .whatsapp-btn img{
   width:24px;
 }
 
-.whatsapp-options{
-  display:none;
-  flex-direction:column;
-  margin-bottom:8px;
-}
-
-.whatsapp-options a{
-  background:#0B2A6B;
-  color:white;
-  padding:8px;
-  margin:3px 0;
-  border-radius:8px;
-  text-decoration:none;
-}
-
-/* 📱 RESPONSIVE */
+/* RESPONSIVE */
 @media(max-width:768px){
 
-  /* Mostrar hamburguesa */
   .hamburger{
     display:block;
   }
 
-  /* Ocultar menú */
   nav{
     display:none;
     flex-direction:column;
@@ -162,15 +139,6 @@ footer{
 
   nav.active{
     display:flex;
-  }
-
-  /* Mapas uno debajo */
-  .maps-grid{
-    grid-template-columns:1fr;
-  }
-
-  .contacto-grid{
-    grid-template-columns:1fr;
   }
 
 }
